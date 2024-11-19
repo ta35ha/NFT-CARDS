@@ -10,3 +10,4 @@ HTML VE CSS ile bu sayfa oluşturuldu.
 <h3>EKRAN GÖRÜNTÜSÜ</h3>
 
 ![](nft.gif)# NFT-CARD-PROJECT
+# NFT-CARDS
