@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    padding: 0 60px;/* ilk rakam yukardan sıfır 
+    sağdan - soldan 120px boşluk ver demek */
+    background-color: #18191c;
+    color: #eaeaea;
+    overflow-x: hidden;
+
+    
+}
+
+
+              /* ÜST KISIM */
+header {
+     
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;/* yukardan boşluk verir */
+    padding-bottom: 10px;
+    align-items: center;
+    background-color: #18191c;
+    position: sticky;
+    top: 0;
+
+    
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    color: #eaeaea;
+
+}
+
+nav a {
+    transition: all 0.4s;
+}
+
+nav a:hover {
+    color: blueviolet;
+    cursor: pointer;
+    text-shadow: 2px 2px 30px blueviolet;
+    transition: all 0.4s;
+}
+
+header button {
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 66px;
+    color: #eaeaea;
+    background: linear-gradient(225deg,#ff3cac 0%,#784ba0,#2b86c5);
+}
+
+                    /* KARŞILAMA ALANI  */
+
+.hero{display: flex;
+      gap: 50px;
+      align-items: center;
+    justify-content: space-between;
+    margin: 80px 0;}
+    
+    
+    /* sol taraf */
+.hero .left{
+    max-width: 700px;
+}
+
+
+.hero .left h1{
+    
+    font-size: 60px;
+    font-weight: 700px;
+
+}
+
+span{
+    color: #00DBDE;
+}
+
+.left-info{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.left-info button{
+    width: 120px;
+    height: 120px;
+    background-color: #4158D0;
+    background-color: #00DBDE;
+    background-color: #00DBDE;
+    background-image: linear-gradient(120deg, #00DBDE 0%, #FC00FF 100%);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border: none;
+    color: #eaeaea;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.left-info button:hover{
+    background-image: linear-gradient(200deg, #00DBDE 0%, #FC00FF 100%);
+
+}
+.left-info p{
+    max-width: 400px;
+}
+
+    /* sağ taraf */
+.hero .right{
+    max-width: 700px;
+}
+
+
+
+.hero .right img{
+    width: 100%;
+    
+}
+
+
+/* MARKALAR */
+
+.brands{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+    gap: 30px;
+    
+}
+
+/* DROPLAR */
+
+.drops-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.drops-sec h1{
+font-size: 45px;
+font-family: "popkins";
+}
+
+.categories{
+display: flex;
+gap: 40px;
+}
+
+.categories li{
+list-style: none;
+background: gray;
+padding: 10px 20px;
+border-radius: 40px;
+cursor: pointer;
+}
+
+.categories li:hover{
+    background-image: linear-gradient(120deg, #00DBDE 0%, #FC00FF 100%);
+}
+
+
+/* kartlar  */
+
+.cards{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 60px;
+   
+}
+
+
+/* kart */
+
+
+.card{
+    width: 280px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #eaeaea;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.card-img{
+width: 100%;
+border-radius: 10px;
+}
+.card-info{
+    display: flex;
+    justify-content: space-between;
+}
+.card-info .price{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.card-info .price img{
+width: 20px;
+}
+.card-info .price p{
+    color: #FC00FF;
+    font-weight: bold;
+}
+.card-info small{
+
+}
+.card-footer{
+display: flex;
+justify-content: space-between;
+border-top: 1px solid gray;
+padding-top: 20px;
+
+}
+
+.card-footer p {
+    background-color: rgb(172, 165, 165);
+    color: #FC00FF;
+    padding: 5px 10px;
+    border-radius: 10px;
+    
+}
+
+.card-footer button {
+    border: none;
+    background-color:white ;
+    font-family: 'poppins';
+    color: blue;
+    cursor: pointer;
+}
+.card-footer button:hover{
+    background-image: linear-gradient(120deg, #00DBDE 0%, #FC00FF 100%);
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+/* REKLAM ALANI */
+
+.ad{
+    background-color: #00DBDE;
+    text-align: center;
+    margin: 100px -120px;
+    font-size: 100px;
+    font-weight: 600px;
+    transform: rotate(-9deg);  /* istenılen yazıya derece verir */
+    letter-spacing: 30px;
+    white-space: nowrap;
+    text-shadow: 4px 4px 50px white;
+    cursor: pointer;
+    
+}
+
+/* BİLGİ KUTUCUKLARI */
+
+.info-sec{
+    margin: 200px 0;
+}
+.info-sec h1{
+    font-size: 48px;
+    font-weight:70px ;
+    margin-bottom: 30px;
+}
+
+.info-cards{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.info-card{
+    background-color:rgb(74, 2, 74) ;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    max-width: 500px;
+    
+}
+
+.info-card img{
+    width: 50px;
+}
+
+.nav-button {
+    display: none;
+}
+
+
+/*  MOBİL UYUMLU( RESPONSİVE ) YAPMA */
+
+
+
+/* 800 px ten küçük cihazlar için */
+
+
+@media (max-width :800px){
+    .cards {
+        justify-content: center;
+    }
+    nav{
+        display: none;
+    }
+    .contact-btn{
+        display: none;
+    }
+    .nav-button{
+        display: block;
+    }
+
+    
+}
+
+
+
+/* 1300px ten büyük cihazlar */
+
+@media (min-width: 1300px) {
+    .hero .left {
+        max-width: 900px;
+    }
+    .left-info p {
+        max-width: 600px;
+    }
+}
+
+
+/* 1500pc ten küçük cihazlar */
+
+@media (max-width: 1500px) {
+    .hero {
+        flex-direction: column;
+    }
+    .hero .right {
+        order: -1;
+      }
+
+      .info-cards{
+        flex-direction: column;
+        align-items: center;
+      }
+    }
